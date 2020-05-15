@@ -41,16 +41,12 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #5e72e4 !default;
-$indigo:  #5603ad !default;
-$purple:  #8965e0 !default;
-$pink:    #f3a4b5 !default;
-$red:     #f5365c !default;
-$orange:  #fb6340 !default;
-$yellow:  #ffd600 !default;
-$green:   #2dce89 !default;
-$teal:    #11cdef !default;
-$cyan:    #2bffc6 !default;
+$blue:    #0489B1 !default;
+$pink:    #F78F96 !default;
+$red:     #D03957 !default;
+$yellow:  #F9D050 !default;
+$green:   #83CFB1 !default;
+$brown:   #CE7541 !default;
 
 $line-height-lg:              1.625rem !default;
 $line-height-sm:              1.5 !default;
@@ -77,15 +73,10 @@ $opacity-2:                  rgba(255,255,255, .2) !default;
 $colors: () !default;
 $colors: map-merge((
   "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
   "pink":       $pink,
   "red":        $red,
-  "orange":     $orange,
   "yellow":     $yellow,
   "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
   "light":      $gray-400,
@@ -96,27 +87,27 @@ $colors: map-merge((
 $default-color-opacity:      rgba(182, 182, 182, .6) !default;
 $orange-color:               #f96332 !default;
 
-$default:       #344675 !default;
-$primary:       #e14eca !default;
-$secondary:     #f4f5f7 !default;
-$success:       #00f2c3 !default;
-$info:          #1d8cf8 !default;
-$warning:       #ff8d72 !default;
-$danger:        #fd5d93 !default;
-$black:         #222a42 !default;
+$default:       #83CFB1 !default;
+$primary:       #5DAA86 !default;
+$secondary:     #AFAA8D !default;
+$success:       #5DAA86 !default;
+$info:          #0489B1 !default;
+$warning:       #D03957 !default;
+$danger:        #D03957 !default;
+$black:         #232323 !default;
 
 
 // gradient
-$default-states:       #263148 !default;
-$primary-states:       #ba54f5 !default;
+$default-states:       #5DAA86 !default;
+$primary-states:       #83CFB1 !default;
 $success-states:       #0098f0 !default;
 $info-states:          #3358f4 !default;
-$warning-states:       #ff6491 !default;
-$danger-states:        #ec250d !default;
-$black-states:         #1d253b !default;
+$warning-states:       #F78F96 !default;
+$danger-states:        #D03957 !default;
+$black-states:         #232323 !default;
 
-$background-black:           #171941 !default;
-$background-states-black:    #1e1e24 !default;
+$background-black:           #232323 !default;
+$background-states-black:    #232323 !default;
 
 // opacity
 $default-opacity:      rgba(182, 182, 182, .6) !default;
@@ -895,7 +886,7 @@ $card-border-color:                 rgba($black, .05);
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
 $card-cap-bg:                       $gray-100 !default;
 $card-bg:                           $white !default;
-$card-black-background:             #1f2251 !default;
+$card-black-background:             #AFAA8D !default;
 $card-img-overlay-padding:          1.25rem !default;
 
 //$card-group-margin:                 ($grid-gutter-width / 2);
