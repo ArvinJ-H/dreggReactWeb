@@ -190,16 +190,6 @@ class Basics extends React.Component {
                   />
                 </InputGroup>
               </Col>
-              <Col lg="3" sm="6">
-                <InputGroup>
-                  <Input placeholder="Right Nucleo Icon" type="text" />
-                  <InputGroupAddon addonType="append">
-                    <InputGroupText>
-                      <i className="tim-icons icon-lock-circle" />
-                    </InputGroupText>
-                  </InputGroupAddon>
-                </InputGroup>
-              </Col>
             </Row>
           </div>
           <div className="space-70" />

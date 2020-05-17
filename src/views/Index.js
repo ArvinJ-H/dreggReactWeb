@@ -56,7 +56,6 @@ class Index extends React.Component {
             <Notifications />
             <Typography />
             <JavaScript />
-            <NucleoIcons />
             <Signup />
             <Examples />
             <Download />
