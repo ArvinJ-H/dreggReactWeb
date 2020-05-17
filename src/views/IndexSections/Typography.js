@@ -21,6 +21,14 @@ import { Container, Row, Col } from "reactstrap";
 
 class Typography extends React.Component {
   render() {
+    const polarisFont ={
+      fontFamily: "Polaris",
+    }
+    const quagmireFont ={
+      fontFamily: "quagmire",
+    }
+
+
     return (
       <div className="section section-typo">
         <img alt="..." className="path" src={require("assets/img/path1.png")} />
@@ -34,42 +42,42 @@ class Typography extends React.Component {
           <div id="typography">
             <Row>
               <Col md="12">
-                <div className="typography-line">
+                <div className="typography-line" style={polarisFont}>
                   <h1>
                     <span>Header 1</span>
-                    The Life of BLK• Design System React
+                    Polaris Regular 36pt
                   </h1>
                 </div>
-                <div className="typography-line">
+                <div className="typography-line" style={polarisFont}>
                   <h2>
                     <span>Header 2</span>
-                    The Life of BLK• Design System React
+                    Polaris Regular 30pt
                   </h2>
                 </div>
-                <div className="typography-line">
+                <div className="typography-line" style={polarisFont}>
                   <h3>
                     <span>Header 3</span>
-                    The Life of BLK• Design System React
+                    Polaris Regular 24pt
                   </h3>
                 </div>
-                <div className="typography-line">
+                <div className="typography-line" style={quagmireFont}>
                   <h4>
                     <span>Header 4</span>
-                    The Life of BLK• Design System React
+                    QUAGMIRE (CAPS) MEDIUM 18PT
                   </h4>
                 </div>
-                <div className="typography-line">
+                <div className="typography-line" style={quagmireFont}>
                   <h5>
                     <span>Header 5</span>
-                    The Life of BLK• Design System React
+                    QUAGMIRE (CAPS) MEDIUM 14PT
                   </h5>
                 </div>
-                <div className="typography-line">
+                {/* <div className="typography-line">
                   <h6>
                     <span>Header 6</span>
                     The Life of BLK• Design System React
                   </h6>
-                </div>
+                </div> */}
                 <div className="typography-line">
                   <p>
                     <span>Paragraph</span>I will be the leader of a company that
