@@ -58,7 +58,6 @@ class Index extends React.Component {
             <JavaScript />
             <Signup />
             <Examples />
-            <Download />
           </div>
           <Footer />
         </div>
