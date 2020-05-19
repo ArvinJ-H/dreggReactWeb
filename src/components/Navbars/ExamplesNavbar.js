@@ -52,7 +52,7 @@ class PagesNavbar extends React.Component {
       document.body.scrollTop > 99
     ) {
       this.setState({
-        color: "bg-info"
+        color: "bg-dark"
       });
     } else if (
       document.documentElement.scrollTop < 100 ||
@@ -89,16 +89,13 @@ class PagesNavbar extends React.Component {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              to="/"
+              to="/dr-egg-component"
               id="navbar-brand"
               tag={Link}
             >
-              <span>BLK• </span>
-              Design System React
+              <span>Dr Egg</span>&nbsp;
+              Adventures
             </NavbarBrand>
-            <UncontrolledTooltip placement="bottom" target="navbar-brand">
-              Designed and Coded by Creative Tim
-            </UncontrolledTooltip>
             <button
               aria-expanded={this.state.collapseOpen}
               className="navbar-toggler navbar-toggler"
@@ -120,7 +117,7 @@ class PagesNavbar extends React.Component {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    BLK•React
+                    Dr Egg
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
@@ -135,6 +132,16 @@ class PagesNavbar extends React.Component {
               </Row>
             </div>
             <Nav navbar>
+            <NavItem>
+                <NavLink tag={Link} to="/landing-page">
+                  Home
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink tag={Link} to="/profile-page">
+                  Profile
+                </NavLink>
+              </NavItem>
               <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
@@ -157,38 +164,6 @@ class PagesNavbar extends React.Component {
                 >
                   <i className="fab fa-facebook-square" />
                   <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="p-0">
-                <NavLink
-                  data-placement="bottom"
-                  href="https://www.instagram.com/CreativeTimOfficial"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Follow us on Instagram"
-                >
-                  <i className="fab fa-instagram" />
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <Button
-                  className="nav-link d-none d-lg-block"
-                  color="primary"
-                  target="_blank"
-                  href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-examples-navbar-upgrade-pro"
-                >
-                  <i className="tim-icons icon-spaceship" /> Upgrade to PRO
-                </Button>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/">
-                  Back to Kit
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
-                  Have an issue?
                 </NavLink>
               </NavItem>
             </Nav>
