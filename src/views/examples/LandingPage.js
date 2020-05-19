@@ -30,7 +30,7 @@ import {
   ListGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -38,6 +38,8 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
 import bigChartData from "variables/charts.js";
+
+import WorldConcept from "assets/img/WorldConcept.png";
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -47,11 +49,23 @@ class LandingPage extends React.Component {
     document.body.classList.toggle("landing-page");
   }
   render() {
+    const imgMaxSize= {
+      height:"auto",
+    }
+    const headerBackImg ={
+      backgroundImage: `url(${WorldConcept})`,
+      backgroundSize:"cover",
+    }
+    const contentCenterBlur ={
+      backgroundColor: "rgba(255,255,255, 0.4)",
+      border: "3px solid #232323",
+      borderRadius: "10px",
+    }
     return (
       <>
         <ExamplesNavbar />
         <div className="wrapper">
-          <div className="page-header">
+          <div className="page-header" style={headerBackImg}>
             <img
               alt="..."
               className="path"
@@ -82,66 +96,31 @@ class LandingPage extends React.Component {
               className="shapes circle"
               src={require("assets/img/cercuri.png")}
             />
-            <div className="content-center">
+            <div className="content-center" style={contentCenterBlur}>
               <Row className="row-grid justify-content-between align-items-center text-left">
                 <Col lg="6" md="6">
-                  <h1 className="text-white">
-                    We keep your coin <br />
-                    <span className="text-white">secured</span>
+                  <h1 className="text-black">
+                    About Us <br />
                   </h1>
-                  <p className="text-white mb-3">
-                    A wonderful serenity has taken possession of my entire soul,
-                    like these sweet mornings of spring which I enjoy with my
-                    whole heart. I am alone, and feel...
+                  <p className="text-black mb-3">
+                    We help primary school teachers better engage students in
+                    STE(A)M (Science, Technology, Engineering, Arts, Maths) like
+                    these sweet mornings of spring which I enjoy with my
+                    learning through interactive EduTech products and
+                    story-telling. Through problem-based activities designed
+                    with whole heart. I am alone, and feel... leading STEM
+                    educators, encouraging critical thinking, creativity and
+                    competence, students and teachers can become equipped for
+                    STE(A)M, Artificial Intelligence (AI) and machine-learning
+                    driven futures.
                   </p>
-                  <div className="btn-wrapper mb-3">
-                    <p className="category text-success d-inline">
-                      From 9.99%/mo
-                    </p>
-                    <Button
-                      className="btn-link"
-                      color="success"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      <i className="tim-icons icon-minimal-right" />
-                    </Button>
-                  </div>
-                  <div className="btn-wrapper">
-                    <div className="button-container">
-                      <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-dribbble" />
-                      </Button>
-                      <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-facebook" />
-                      </Button>
-                    </div>
-                  </div>
                 </Col>
                 <Col lg="4" md="5">
                   <img
                     alt="..."
                     className="img-fluid"
-                    src={require("assets/img/etherum.png")}
+                    src={require("assets/img/Dr Egg Logo.png")}
+                    style={imgMaxSize}
                   />
                 </Col>
               </Row>
@@ -156,125 +135,104 @@ class LandingPage extends React.Component {
               />
               <Container>
                 <Row className="row-grid justify-content-between">
-                  <Col className="mt-lg-5" md="5">
-                    <Row>
-                      <Col className="px-2 py-2" lg="6" sm="12">
-                        <Card className="card-stats">
-                          <CardBody>
-                            <Row>
-                              <Col md="4" xs="5">
-                                <div className="icon-big text-center icon-warning">
-                                  <i className="tim-icons icon-trophy text-warning" />
-                                </div>
-                              </Col>
-                              <Col md="8" xs="7">
-                                <div className="numbers">
-                                  <CardTitle tag="p">3,237</CardTitle>
-                                  <p />
-                                  <p className="card-category">Awards</p>
-                                </div>
-                              </Col>
-                            </Row>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                      <Col className="px-2 py-2" lg="6" sm="12">
-                        <Card className="card-stats upper bg-default">
-                          <CardBody>
-                            <Row>
-                              <Col md="4" xs="5">
-                                <div className="icon-big text-center icon-warning">
-                                  <i className="tim-icons icon-coins text-white" />
-                                </div>
-                              </Col>
-                              <Col md="8" xs="7">
-                                <div className="numbers">
-                                  <CardTitle tag="p">3,653</CardTitle>
-                                  <p />
-                                  <p className="card-category">Commits</p>
-                                </div>
-                              </Col>
-                            </Row>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col className="px-2 py-2" lg="6" sm="12">
-                        <Card className="card-stats">
-                          <CardBody>
-                            <Row>
-                              <Col md="4" xs="5">
-                                <div className="icon-big text-center icon-warning">
-                                  <i className="tim-icons icon-gift-2 text-info" />
-                                </div>
-                              </Col>
-                              <Col md="8" xs="7">
-                                <div className="numbers">
-                                  <CardTitle tag="p">593</CardTitle>
-                                  <p />
-                                  <p className="card-category">Presents</p>
-                                </div>
-                              </Col>
-                            </Row>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                      <Col className="px-2 py-2" lg="6" sm="12">
-                        <Card className="card-stats">
-                          <CardBody>
-                            <Row>
-                              <Col md="4" xs="5">
-                                <div className="icon-big text-center icon-warning">
-                                  <i className="tim-icons icon-credit-card text-success" />
-                                </div>
-                              </Col>
-                              <Col md="8" xs="7">
-                                <div className="numbers">
-                                  <CardTitle tag="p">10,783</CardTitle>
-                                  <p />
-                                  <p className="card-category">Forks</p>
-                                </div>
-                              </Col>
-                            </Row>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col md="6">
+                  <Col md="10">
                     <div className="pl-md-5">
                       <h1>
-                        Large <br />
-                        Achivements
+                      What our research tells us
                       </h1>
                       <p>
-                        I should be capable of drawing a single stroke at the
-                        present moment; and yet I feel that I never was a
-                        greater artist than now.
+                      Working with teachers and students revealed a gap as:
                       </p>
                       <br />
-                      <p>
-                        When, while the lovely valley teems with vapour around
-                        me, and the meridian sun strikes the upper surface of
-                        the impenetrable foliage of my trees, and but a few
-                        stray.
-                      </p>
+                      <ul>
+                        <li>Students love to engage in STE(A)M learning</li>
+                        <li>Teachers struggle to teach and engage students in STEM and machine-based learning</li>
+                      </ul>
                       <br />
-                      <a
-                        className="font-weight-bold text-info mt-5"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        Show all{" "}
-                        <i className="tim-icons icon-minimal-right text-info" />
-                      </a>
                     </div>
                   </Col>
                 </Row>
               </Container>
             </section>
           </section>
+          <section className="section section-lg">
+            {/* <section className="section"> */}
+              <Container>
+                <Row className="row-grid justify-content-between">
+                  <Col md="10">
+                    <div className="pl-md-5">
+                      <h1>
+                      How are we different?
+                      </h1>
+                      <p>
+                      Our content and STEM and AI teaching resources are:
+                      </p>
+                      <br />
+                      <ul>
+                        <li>NSW K-6 2019 and IBM AI global curriculum aligned</li>
+                        <li>Co-designed with Macquarie University’s School of Education</li>
+                        <li>Based on Self-Determination Learning Theory to build 21st century learning skills</li>
+                        <li>NESA (National Education Standards Accreditation) approval</li>
+                      </ul>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            {/* </section> */}
+          </section>
+          <section className="section section-lg">
+            {/* <section className="section"> */}
+              <Container>
+                <Row className="row-grid justify-content-between">
+                  <Col md="10">
+                    <div className="pl-md-5">
+                      <h1>
+                      Testimonials
+                      </h1>
+                      <br />
+                      <ul>
+                        <li><strong>Dr Egg Adventure Lab has significant potential as a powerful STEM teaching resource</strong>: <br />
+                          Dr Anne Forbes and Dr Iain Haye Macquarie University, School of Education</li>
+                        <br />
+                        <li><strong>Dr Egg is a brilliant storyworld with a science theme</strong> <br />
+                          - Dianne Todaro Wells - 3-4 Teacher, St Xavier School Arncliffe</li>
+                        <br />
+                        <li><strong>Dr Egg is Authentic learning at its best</strong> <br />
+                        - Dianne Todaro Wells - teacher</li>
+                        <br />
+                        <li><strong>It's a no brainer activity for them to make self regulated self corrected learning</strong> <br />
+                          - Dianne Todaro Wells - teacher</li>
+                        <br />
+                      </ul>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            {/* </section> */}
+          </section>
+          <section className="section section-lg">
+            {/* <section className="section"> */}
+              <Container>
+                <Row className="row-grid justify-content-between">
+                  <Col md="10">
+                    <div className="pl-md-5">
+                      <h1>
+                      CTAS (CALL TO ACTION)
+                      </h1>
+                      <em>
+                        <p>In a world of discoveries, </p>
+                        <p>Where even the impossible seems possible ...</p>
+                        <p> Help three kid inventors </p>
+                        <p>Create scientific solutions so ingenious ...</p>
+                        <p> That together you can change the world.</p>
+                      </em>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            {/* </section> */}
+          </section>
+{/*           
           <section className="section section-lg">
             <img
               alt="..."
@@ -585,6 +543,7 @@ class LandingPage extends React.Component {
               </Row>
             </Container>
           </section>
+           */}
           <Footer />
         </div>
       </>
