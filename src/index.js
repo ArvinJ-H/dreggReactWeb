@@ -31,7 +31,7 @@ import ProfilePage from "views/examples/ProfilePage.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/dr-egg-component" render={props => <Index {...props} />} />
+      <Route path="/" render={props => <Index {...props} />} />
       <Route
         path="/landing-page"
         render={props => <LandingPage {...props} />}
