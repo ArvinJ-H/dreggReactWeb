@@ -105,6 +105,9 @@ class ProfilePage extends React.Component {
     const pageHHeader = {
         minHeight: "100px",
     }
+    const cardSize = {
+      minHeight: "584px",
+  }
     return (
       <>
         <Navbar />
@@ -115,7 +118,7 @@ class ProfilePage extends React.Component {
           <Container className="align-items-center">
               <Row>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -132,7 +135,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -149,7 +152,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -167,7 +170,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -184,7 +187,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -201,7 +204,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -218,7 +221,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -235,7 +238,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -253,7 +256,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -271,7 +274,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -289,7 +292,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -307,7 +310,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}> 
                     <CardHeader>
                       <img
                         alt="..."
@@ -324,7 +327,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -341,7 +344,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
@@ -359,7 +362,7 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={cardSize}>
                     <CardHeader>
                       <img
                         alt="..."
