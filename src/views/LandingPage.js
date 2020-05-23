@@ -102,16 +102,10 @@ class LandingPage extends React.Component {
                     About Us <br />
                   </h1>
                   <p className="text-black mb-3">
-                    We help primary school teachers better engage students in
-                    STE(A)M (Science, Technology, Engineering, Arts, Maths) like
-                    these sweet mornings of spring which I enjoy with my
-                    learning through interactive EduTech products and
-                    story-telling. Through problem-based activities designed
-                    with whole heart. I am alone, and feel... leading STEM
-                    educators, encouraging critical thinking, creativity and
-                    competence, students and teachers can become equipped for
-                    STE(A)M, Artificial Intelligence (AI) and machine-learning
-                    driven futures.
+                    We help primary school teachers better engage students in STEM  (Science, Technology, Engineering, Arts, Maths) learning through interactive EduTech products and story-telling. 
+                    Through problem-based activities designed with leading STEM educators, encouraging critical thinking, creativity and competence, students and teachers can become equipped for STEM, Artificial Intelligence (AI) and machine-learning driven futures.
+
+
                   </p>
                 </Col>
                 <Col lg="4" md="5">
