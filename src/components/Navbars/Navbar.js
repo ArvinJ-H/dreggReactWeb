@@ -136,14 +136,14 @@ class PagesNavbar extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/profile-page">
+                <NavLink tag={Link} to="/team-page">
                   Profile
                 </NavLink>
               </NavItem>
               <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
-                  href="https://twitter.com/CreativeTim"
+                  href="https://twitter.com"
                   rel="noopener noreferrer"
                   target="_blank"
                   title="Follow us on Twitter"
@@ -155,7 +155,7 @@ class PagesNavbar extends React.Component {
               <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
-                  href="https://www.facebook.com/CreativeTim"
+                  href="https://www.facebook.com"
                   rel="noopener noreferrer"
                   target="_blank"
                   title="Like us on Facebook"

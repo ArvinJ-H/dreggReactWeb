@@ -92,7 +92,7 @@ class Footer extends React.Component {
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
                   color="default"
-                  href="https://twitter.com/creativetim"
+                  href="https://twitter.com"
                   id="tooltip622135962"
                   target="_blank"
                 >
@@ -104,7 +104,7 @@ class Footer extends React.Component {
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
                   color="default"
-                  href="https://www.facebook.com/creativetim"
+                  href="https://www.facebook.com"
                   id="tooltip230450801"
                   target="_blank"
                 >
@@ -116,7 +116,7 @@ class Footer extends React.Component {
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
                   color="default"
-                  href="https://dribbble.com/creativetim"
+                  href="https://dribbble.com"
                   id="tooltip318450378"
                   target="_blank"
                 >
