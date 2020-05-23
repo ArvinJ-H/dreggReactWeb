@@ -23,17 +23,15 @@ import PageHeader from "components/PageHeader/PageHeader.js";
 import Footer from "components/Footer/Footer.js";
 
 // sections for this page/view
-import Basics from "views/IndexSections/Basics.js";
-import Navbars from "views/IndexSections/Navbars.js";
-import Tabs from "views/IndexSections/Tabs.js";
-import Pagination from "views/IndexSections/Pagination.js";
-import Notifications from "views/IndexSections/Notifications.js";
-import Typography from "views/IndexSections/Typography.js";
-import JavaScript from "views/IndexSections/JavaScript.js";
-import NucleoIcons from "views/IndexSections/NucleoIcons.js";
-import Signup from "views/IndexSections/Signup.js";
-import Examples from "views/IndexSections/Examples.js";
-import Download from "views/IndexSections/Download.js";
+import Basics from "components/styleGuide/Basics.js";
+import Navbars from "components/styleGuide/Navbars.js";
+import Tabs from "components/styleGuide/Tabs.js";
+import Pagination from "components/styleGuide/Pagination.js";
+import Notifications from "components/styleGuide/Notifications.js";
+import Typography from "components/styleGuide/Typography.js";
+import JavaScript from "components/styleGuide/JavaScript.js";
+import Signup from "components/styleGuide/Signup.js";
+import Examples from "components/styleGuide/Examples.js";
 
 class Index extends React.Component {
   componentDidMount() {
