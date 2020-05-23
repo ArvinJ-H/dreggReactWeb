@@ -19,7 +19,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
-  Button,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -29,7 +28,6 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip
 } from "reactstrap";
 
 class PagesNavbar extends React.Component {
@@ -133,7 +131,7 @@ class PagesNavbar extends React.Component {
             </div>
             <Nav navbar>
             <NavItem>
-                <NavLink tag={Link} to="/landing-page">
+                <NavLink tag={Link} to="/">
                   Home
                 </NavLink>
               </NavItem>
