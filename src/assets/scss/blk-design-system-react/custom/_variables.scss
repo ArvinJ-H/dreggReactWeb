@@ -226,7 +226,7 @@ $love-color: $red !default;
 
 // Body
 
-$body-bg: $background-green !default;
+$body-bg: $background-black !default;
 $body-color: $gray-700 !default;
 
 
@@ -368,8 +368,8 @@ $general-transition-time:     300ms             !default;
 
 // Fonts
 
-$font-family-base:            'Poppins', sans-serif !default;
-$font-family-alt:             'Poppins', sans-serif !default;
+$font-family-base:            museo-sans !default;
+$font-family-alt:             museo-sans !default;
 
 $font-size-dash:              .875rem !default;
 
