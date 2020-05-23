@@ -37,7 +37,6 @@ import {
 import Navbar from "components/Navbars/Navbar.js";
 import Footer from "components/Footer/Footer.js";
 
-
 import WorldConcept from "assets/img/WorldConcept.png";
 
 class LandingPage extends React.Component {
@@ -48,77 +47,59 @@ class LandingPage extends React.Component {
     document.body.classList.toggle("landing-page");
   }
   render() {
-    const imgMaxSize= {
-      height:"auto",
-    }
-    const headerBackImg ={
+    const imgMaxSize = {
+      height: "auto",
+    };
+    const headerBackImg = {
       backgroundImage: `url(${WorldConcept})`,
-      backgroundSize:"cover",
-    }
-    const contentCenterBlur ={
+      backgroundSize: "cover",
+    };
+    const contentCenterBlur = {
       backgroundColor: "rgba(255,255,255, 0.4)",
       border: "3px solid #232323",
       borderRadius: "10px",
-    }
+    };
+
+
     return (
       <>
         <Navbar />
         <div className="wrapper">
           <div className="page-header" style={headerBackImg}>
-            <img
-              alt="..."
-              className="path"
-              src={require("assets/img/blob.png")}
-            />
-            <img
-              alt="..."
-              className="path2"
-              src={require("assets/img/path2.png")}
-            />
-            <img
-              alt="..."
-              className="shapes triangle"
-              src={require("assets/img/triunghiuri.png")}
-            />
-            <img
-              alt="..."
-              className="shapes wave"
-              src={require("assets/img/waves.png")}
-            />
-            <img
-              alt="..."
-              className="shapes squares"
-              src={require("assets/img/patrat.png")}
-            />
-            <img
-              alt="..."
-              className="shapes circle"
-              src={require("assets/img/cercuri.png")}
-            />
-            <div className="content-center" style={contentCenterBlur}>
-              <Row className="row-grid justify-content-between align-items-center text-left">
-                <Col lg="6" md="6">
-                  <h1 className="text-black">
-                    About Us <br />
-                  </h1>
-                  <p className="text-black mb-3">
-                    We help primary school teachers better engage students in STEM  (Science, Technology, Engineering, Arts, Maths) learning through interactive EduTech products and story-telling. 
-                    Through problem-based activities designed with leading STEM educators, encouraging critical thinking, creativity and competence, students and teachers can become equipped for STEM, Artificial Intelligence (AI) and machine-learning driven futures.
-
-
-                  </p>
-                </Col>
-                <Col lg="4" md="5">
-                  <img
-                    alt="..."
-                    className="img-fluid"
-                    src={require("assets/img/Dr Egg Logo.png")}
-                    style={imgMaxSize}
-                  />
-                </Col>
+            <div className="content-center">
+              <Row className="row-grid justify-content-between align-items-center">
+                <h1 className="text-center text-black">
+                  Discover an interactive universe of science adventures.
+                </h1>
               </Row>
             </div>
           </div>
+          <section className="section section-lg">
+            <section className="section">
+              <Container>
+                <Row className="row-grid justify-content-between">
+                  <Col md="10">
+                    <div className="pl-md-5">
+                      <h1 className="text-white">
+                        About Us <br />
+                      </h1>
+                      <p className="text-white mb-3">
+                        We help primary school teachers better engage students
+                        in STEM (Science, Technology, Engineering, Arts, Maths)
+                        learning through interactive EduTech products and
+                        story-telling. Through problem-based activities designed
+                        with leading STEM educators, encouraging critical
+                        thinking, creativity and competence, students and
+                        teachers can become equipped for STEM, Artificial
+                        Intelligence (AI) and machine-learning driven futures.
+                      </p>
+                      <br />
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            </section>
+          </section>
           <section className="section section-lg">
             <section className="section">
               <img
@@ -130,16 +111,17 @@ class LandingPage extends React.Component {
                 <Row className="row-grid justify-content-between">
                   <Col md="10">
                     <div className="pl-md-5">
-                      <h1>
-                      What our research tells us
-                      </h1>
+                      <h1>What our research tells us</h1>
                       <p>
-                      Working with teachers and students revealed a gap as:
+                        Working with teachers and students revealed a gap as:
                       </p>
                       <br />
                       <ul>
                         <li>Students love to engage in STE(A)M learning</li>
-                        <li>Teachers struggle to teach and engage students in STEM and machine-based learning</li>
+                        <li>
+                          Teachers struggle to teach and engage students in STEM
+                          and machine-based learning
+                        </li>
                       </ul>
                       <br />
                     </div>
@@ -150,82 +132,84 @@ class LandingPage extends React.Component {
           </section>
           <section className="section section-lg">
             {/* <section className="section"> */}
-              <Container>
-                <Row className="row-grid justify-content-between">
-                  <Col md="10">
-                    <div className="pl-md-5">
-                      <h1>
-                      How are we different?
-                      </h1>
-                      <p>
-                      Our content and STEM and AI teaching resources are:
-                      </p>
-                      <br />
-                      <ul>
-                        <li>NSW K-6 2019 and IBM AI global curriculum aligned</li>
-                        <li>Co-designed with Macquarie University’s School of Education</li>
-                        <li>Based on Self-Determination Learning Theory to build 21st century learning skills</li>
-                        <li>NESA (National Education Standards Accreditation) approval</li>
-                      </ul>
-                    </div>
-                  </Col>
-                </Row>
-              </Container>
+            <Container>
+              <Row className="row-grid justify-content-between">
+                <Col md="10">
+                  <div className="pl-md-5">
+                    <h1>How are we different?</h1>
+                    <p>Our content and STEM and AI teaching resources are:</p>
+                    <br />
+                    <ul>
+                      <li>NSW K-6 2019 and IBM AI global curriculum aligned</li>
+                      <li>
+                        Co-designed with Macquarie University’s School of
+                        Education
+                      </li>
+                      <li>
+                        Based on Self-Determination Learning Theory to build
+                        21st century learning skills
+                      </li>
+                      <li>
+                        NESA (National Education Standards Accreditation)
+                        approval
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
             {/* </section> */}
           </section>
           <section className="section section-lg">
             {/* <section className="section"> */}
-              <Container>
-                <Row className="row-grid justify-content-between">
-                  <Col md="10">
-                    <div className="pl-md-5">
-                      <h1>
-                      Testimonials
-                      </h1>
+            <Container>
+              <Row className="row-grid justify-content-between">
+                <Col md="10">
+                  <div className="pl-md-5">
+                    <h1>Testimonials</h1>
+                    <br />
+                    <ul>
+                      <li>
+                        <strong>
+                          Dr Egg Adventure Lab has significant potential as a
+                          powerful STEM teaching resource
+                        </strong>
+                        : <br />
+                        Dr Anne Forbes and Dr Iain Haye Macquarie University,
+                        School of Education
+                      </li>
                       <br />
-                      <ul>
-                        <li><strong>Dr Egg Adventure Lab has significant potential as a powerful STEM teaching resource</strong>: <br />
-                          Dr Anne Forbes and Dr Iain Haye Macquarie University, School of Education</li>
-                        <br />
-                        <li><strong>Dr Egg is a brilliant storyworld with a science theme</strong> <br />
-                          - Dianne Todaro Wells - 3-4 Teacher, St Xavier School Arncliffe</li>
-                        <br />
-                        <li><strong>Dr Egg is Authentic learning at its best</strong> <br />
-                        - Dianne Todaro Wells - teacher</li>
-                        <br />
-                        <li><strong>It's a no brainer activity for them to make self regulated self corrected learning</strong> <br />
-                          - Dianne Todaro Wells - teacher</li>
-                        <br />
-                      </ul>
-                    </div>
-                  </Col>
-                </Row>
-              </Container>
+                      <li>
+                        <strong>
+                          Dr Egg is a brilliant storyworld with a science theme
+                        </strong>{" "}
+                        <br />- Dianne Todaro Wells - 3-4 Teacher, St Xavier
+                        School Arncliffe
+                      </li>
+                      <br />
+                      <li>
+                        <strong>
+                          Dr Egg is Authentic learning at its best
+                        </strong>{" "}
+                        <br />- Dianne Todaro Wells - teacher
+                      </li>
+                      <br />
+                      <li>
+                        <strong>
+                          It's a no brainer activity for them to make self
+                          regulated self corrected learning
+                        </strong>{" "}
+                        <br />- Dianne Todaro Wells - teacher
+                      </li>
+                      <br />
+                    </ul>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
             {/* </section> */}
           </section>
-          <section className="section section-lg">
-            {/* <section className="section"> */}
-              <Container>
-                <Row className="row-grid justify-content-between">
-                  <Col md="10">
-                    <div className="pl-md-5">
-                      <h1>
-                      CTAS (CALL TO ACTION)
-                      </h1>
-                      <em>
-                        <p>In a world of discoveries, </p>
-                        <p>Where even the impossible seems possible ...</p>
-                        <p> Help three kid inventors </p>
-                        <p>Create scientific solutions so ingenious ...</p>
-                        <p> That together you can change the world.</p>
-                      </em>
-                    </div>
-                  </Col>
-                </Row>
-              </Container>
-            {/* </section> */}
-          </section>
-{/*           
+          {/*           
           <section className="section section-lg">
             <img
               alt="..."
