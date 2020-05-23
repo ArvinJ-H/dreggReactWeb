@@ -27,6 +27,7 @@ import StyleGuide from "views/StyleGuide.js";
 import LandingPage from "views/LandingPage.js";
 import RegisterPage from "views/RegisterPage.js";
 import ProfilePage from "views/ProfilePage.js";
+import TeamPage from "views/TeamPage.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -43,6 +44,10 @@ ReactDOM.render(
       <Route
         path="/profile-page"
         render={props => <ProfilePage {...props} />}
+      />
+      <Route
+        path="/team-page"
+        render={props => <TeamPage {...props} />}
       />
       <Redirect from="/" to="/style-guide" />
     </Switch>
