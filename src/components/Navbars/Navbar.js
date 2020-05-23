@@ -136,7 +136,7 @@ class PagesNavbar extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/profile-page">
+                <NavLink tag={Link} to="/team-page">
                   Profile
                 </NavLink>
               </NavItem>
