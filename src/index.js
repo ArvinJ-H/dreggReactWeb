@@ -49,7 +49,7 @@ ReactDOM.render(
         path="/team-page"
         render={props => <TeamPage {...props} />}
       />
-      <Redirect from="/" to="/style-guide" />
+      <Redirect from="/" to="/landing-page" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
