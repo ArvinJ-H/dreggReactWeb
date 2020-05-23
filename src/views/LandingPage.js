@@ -37,7 +37,6 @@ import {
 import Navbar from "components/Navbars/Navbar.js";
 import Footer from "components/Footer/Footer.js";
 
-import bigChartData from "variables/charts.js";
 
 import WorldConcept from "assets/img/WorldConcept.png";
 
