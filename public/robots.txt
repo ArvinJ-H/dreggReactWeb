@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /style-guide/
+Disallow: /register-page/
+Disallow: /profile-page/
+
+
+Sitemap: http://www.dreggadventures.com/sitemap.xml
