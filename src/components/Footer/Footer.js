@@ -92,7 +92,7 @@ class Footer extends React.Component {
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
                   color="default"
-                  href="https://twitter.com"
+                  href="https://twitter.com/dreggadventures"
                   id="tooltip622135962"
                   target="_blank"
                 >
@@ -104,7 +104,7 @@ class Footer extends React.Component {
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
                   color="default"
-                  href="https://www.facebook.com"
+                  href=" https://www.facebook.com/dreggadventures"
                   id="tooltip230450801"
                   target="_blank"
                 >
@@ -116,11 +116,23 @@ class Footer extends React.Component {
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
                   color="default"
-                  href="https://dribbble.com"
+                  href="https://www.instagram.com/dreggadventures/"
                   id="tooltip318450378"
                   target="_blank"
                 >
-                  <i className="fab fa-dribbble" />
+                  <i className="fab fa-instagram" />
+                </Button>
+                <UncontrolledTooltip delay={0} target="tooltip318450378">
+                  Follow us
+                </UncontrolledTooltip>
+                <Button
+                  className="btn-icon btn-neutral btn-round btn-simple"
+                  color="default"
+                  href="https://www.youtube.com/channel/UCtclQznVL7kvtYvZfo6WGyw"
+                  id="tooltip318450378"
+                  target="_blank"
+                >
+                  <i className="fab fa-youtube" />
                 </Button>
                 <UncontrolledTooltip delay={0} target="tooltip318450378">
                   Follow us

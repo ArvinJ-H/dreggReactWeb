@@ -35,7 +35,7 @@ class PagesNavbar extends React.Component {
     super(props);
     this.state = {
       collapseOpen: false,
-      color: "navbar-transparent"
+      color: "navbar-transparent",
     };
   }
   componentDidMount() {
@@ -50,31 +50,31 @@ class PagesNavbar extends React.Component {
       document.body.scrollTop > 99
     ) {
       this.setState({
-        color: "bg-dark"
+        color: "bg-dark",
       });
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
     ) {
       this.setState({
-        color: "navbar-transparent"
+        color: "navbar-transparent",
       });
     }
   };
   toggleCollapse = () => {
     document.documentElement.classList.toggle("nav-open");
     this.setState({
-      collapseOpen: !this.state.collapseOpen
+      collapseOpen: !this.state.collapseOpen,
     });
   };
   onCollapseExiting = () => {
     this.setState({
-      collapseOut: "collapsing-out"
+      collapseOut: "collapsing-out",
     });
   };
   onCollapseExited = () => {
     this.setState({
-      collapseOut: ""
+      collapseOut: "",
     });
   };
   render() {
@@ -86,13 +86,8 @@ class PagesNavbar extends React.Component {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
-              to="/dr-egg-component"
-              id="navbar-brand"
-              tag={Link}
-            >
-              <span>Dr Egg</span>&nbsp;
-              Adventures
+            <NavbarBrand to="/dr-egg-component" id="navbar-brand" tag={Link}>
+              <span>Dr Egg</span>&nbsp; Adventures
             </NavbarBrand>
             <button
               aria-expanded={this.state.collapseOpen}
@@ -114,7 +109,7 @@ class PagesNavbar extends React.Component {
             <div className="navbar-collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     Dr Egg
                   </a>
                 </Col>
@@ -130,7 +125,7 @@ class PagesNavbar extends React.Component {
               </Row>
             </div>
             <Nav navbar>
-            <NavItem>
+              <NavItem>
                 <NavLink tag={Link} to="/">
                   Home
                 </NavLink>
@@ -143,7 +138,7 @@ class PagesNavbar extends React.Component {
               <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
-                  href="https://twitter.com"
+                  href="https://twitter.com/dreggadventures"
                   rel="noopener noreferrer"
                   target="_blank"
                   title="Follow us on Twitter"
@@ -155,13 +150,37 @@ class PagesNavbar extends React.Component {
               <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/dreggadventures "
                   rel="noopener noreferrer"
                   target="_blank"
                   title="Like us on Facebook"
                 >
                   <i className="fab fa-facebook-square" />
                   <p className="d-lg-none d-xl-none">Facebook</p>
+                </NavLink>
+              </NavItem>
+              <NavItem className="p-0">
+                <NavLink
+                  data-placement="bottom"
+                  href="https://www.facebook.com/dreggadventures "
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="Like us on Instagram"
+                >
+                  <i className="fab fa-instagram" />
+                  <p className="d-lg-none d-xl-none">Instagram</p>
+                </NavLink>
+              </NavItem>
+              <NavItem className="p-0">
+                <NavLink
+                  data-placement="bottom"
+                  href="https://www.youtube.com/channel/UCtclQznVL7kvtYvZfo6WGyw "
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="Like us on Youtube"
+                >
+                  <i className="fab fa-youtube" />
+                  <p className="d-lg-none d-xl-none">Youtube</p>
                 </NavLink>
               </NavItem>
             </Nav>
