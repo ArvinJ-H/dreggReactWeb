@@ -34,6 +34,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/style-guide" render={props => <StyleGuide {...props} />} />
       <Route
+      exact
         path="/"
         render={props => <LandingPage {...props} />}
       />
@@ -46,7 +47,7 @@ ReactDOM.render(
         render={props => <ProfilePage {...props} />}
       />
       <Route
-        path="/team-page"
+        path="/team-page" 
         render={props => <TeamPage {...props} />}
       />
       {/* <Redirect from="/" to="/landing-page" /> */}
