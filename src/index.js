@@ -47,7 +47,7 @@ ReactDOM.render(
         render={props => <ProfilePage {...props} />}
       />
       <Route
-        path="/team-page" 
+        path="/team" 
         render={props => <TeamPage {...props} />}
       />
       {/* <Redirect from="/" to="/landing-page" /> */}
