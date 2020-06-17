@@ -89,12 +89,12 @@ class LandingPage extends React.Component {
             <section className="section">
               <Container>
                 <Row className="row-grid justify-content-between">
-                <Col lg="6" md="6">
+                <Col>
                     <div className="pl-md-5 content-center" style={tempFix}>
-                      <h1 className="text-white">
+                      <h1 className="text-black">
                         About Us <br />
                       </h1>
-                      <p className="text-white mb-3">
+                      <p className="text-black mb-3">
                         We help primary school teachers better engage students
                         in STEM (Science, Technology, Engineering, Arts, Maths)
                         learning through interactive EduTech products and
@@ -107,14 +107,14 @@ class LandingPage extends React.Component {
                       <br />
                     </div>
                   </Col>
-                  <Col lg="4" md="5">
+                  {/* <Col lg="4" md="5">
                    <img
                      alt="..."
                      className="img-fluid"
                      src={require("assets/img/Dr Egg Logo.png")}
                      style={imgMaxSize}
                    />
-                 </Col>
+                 </Col> */}
                 </Row>
               </Container>
             </section>
@@ -130,14 +130,14 @@ class LandingPage extends React.Component {
                 <Row className="row-grid justify-content-between">
                   <Col lg="6" md="6">
                     <div className="pl-md-5 content-center" style={tempFix2}>
-                      <h1>What our research tells us</h1>
-                      <p>
+                      <h1 className="text-black">What our research tells us</h1>
+                      <p className="text-black">
                         Working with teachers and students revealed a gap as:
                       </p>
                       <br />
-                      <ul>
-                        <li>Students love to engage in STE(A)M learning</li>
-                        <li>
+                      <ul >
+                        <li className="text-black">Students love to engage in STE(A)M learning</li>
+                        <li className="text-black">
                           Teachers struggle to teach and engage students in STEM
                           and machine-based learning
                         </li>
@@ -163,20 +163,20 @@ class LandingPage extends React.Component {
               <Row className="row-grid justify-content-between">
                 <Col lg="6" md="6">
                   <div className="pl-md-5 content-center" style={tempFix3}>
-                    <h1>How are we different?</h1>
-                    <p>Our content and STEM and AI teaching resources are:</p>
+                    <h1 className="text-black">How are we different?</h1>
+                    <p className="text-black">Our content and STEM and AI teaching resources are:</p>
                     <br />
                     <ul>
-                      <li>NSW K-6 2019 and IBM AI global curriculum aligned</li>
-                      <li>
+                      <li className="text-black">NSW K-6 2019 and IBM AI global curriculum aligned</li>
+                      <li className="text-black">
                         Co-designed with Macquarie University’s School of
                         Education
                       </li>
-                      <li>
+                      <li className="text-black">
                         Based on Self-Determination Learning Theory to build
                         21st century learning skills
                       </li>
-                      <li>
+                      <li className="text-black">
                         NESA (National Education Standards Accreditation)
                         approval
                       </li>
@@ -201,7 +201,7 @@ class LandingPage extends React.Component {
               <Row>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
                   <Card className="card-coin card-plain">
-                    <CardHeader>
+                    <CardHeader className="text-black">
                       Dr Egg Adventure Lab has significant potential as a
                       powerful STEM teaching resource
                     </CardHeader>
@@ -213,7 +213,7 @@ class LandingPage extends React.Component {
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
                   <Card className="card-coin card-plain">
-                    <CardHeader>
+                    <CardHeader className="text-black">
                       Dr Egg is a brilliant storyworld with a science theme
                     </CardHeader>
                     <CardFooter>
@@ -224,7 +224,7 @@ class LandingPage extends React.Component {
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
                   <Card className="card-coin card-plain">
-                    <CardHeader>
+                    <CardHeader className="text-black">
                       Dr Egg is Authentic learning at its best
                     </CardHeader>
                     <CardFooter>- Dianne Todaro Wells - teacher</CardFooter>
@@ -232,7 +232,7 @@ class LandingPage extends React.Component {
                 </Col>
                 <Col className="ml-auto mr-auto" lg="4" md="6">
                   <Card className="card-coin card-plain">
-                    <CardHeader>
+                    <CardHeader className="text-black">
                       It's a no brainer activity for them to make self regulated
                       self corrected learning
                     </CardHeader>

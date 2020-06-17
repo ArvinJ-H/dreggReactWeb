@@ -58,7 +58,7 @@
     "compile-sass": "node-sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css",
     "minify-sass": "node-sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.min.css --output-style compressed",
     "map-sass": "node-sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css --source-map true",
-    "deploy": "aws s3 sync build/ s3://dreggadventures.com --profile dregg"
+    "deploy": "aws s3 sync build/ s3://adventurelab.com.au --profile dregg"
   },
   "eslintConfig": {
     "extends": "react-app"

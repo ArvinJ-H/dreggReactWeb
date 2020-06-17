@@ -107,6 +107,7 @@ $danger-states:        #D03957 !default;
 $black-states:         #232323 !default;
 
 $background-black:           #232323 !default;
+$background-white:           #ffffff !default;
 $background-green:           #5DAA86 !default;
 $background-states-black:    #232323 !default;
 
@@ -226,7 +227,7 @@ $love-color: $red !default;
 
 // Body
 
-$body-bg: $background-black !default;
+$body-bg: $background-green !default;
 $body-color: $gray-700 !default;
 
 

@@ -78,6 +78,10 @@ class PagesNavbar extends React.Component {
     });
   };
   render() {
+    const navLogo ={
+      height: "25px",
+      weight: "25px"
+    }
     return (
       <Navbar
         className={"fixed-top " + this.state.color}
@@ -86,8 +90,14 @@ class PagesNavbar extends React.Component {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand to="/dr-egg-component" id="navbar-brand" tag={Link}>
-              <span>Dr Egg</span>&nbsp; Adventures
+            <NavbarBrand to="/" id="navbar-brand" tag={Link}>
+              <img
+                alt="..."
+                className="img-fluid"
+                src={require("assets/img/Dr Egg Logo.png")}
+                style ={navLogo}
+              />
+              <span>Dr Egg Adventures</span>
             </NavbarBrand>
             <button
               aria-expanded={this.state.collapseOpen}
@@ -110,7 +120,7 @@ class PagesNavbar extends React.Component {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Dr Egg
+                    Dr Egg Adventures
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
@@ -133,54 +143,6 @@ class PagesNavbar extends React.Component {
               <NavItem>
                 <NavLink tag={Link} to="/team">
                   Team
-                </NavLink>
-              </NavItem>
-              <NavItem className="p-0">
-                <NavLink
-                  data-placement="bottom"
-                  href="https://twitter.com/dreggadventures"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Follow us on Twitter"
-                >
-                  <i className="fab fa-twitter" />
-                  <p className="d-lg-none d-xl-none">Twitter</p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="p-0">
-                <NavLink
-                  data-placement="bottom"
-                  href="https://www.facebook.com/dreggadventures "
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Like us on Facebook"
-                >
-                  <i className="fab fa-facebook-square" />
-                  <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="p-0">
-                <NavLink
-                  data-placement="bottom"
-                  href="https://www.facebook.com/dreggadventures "
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Like us on Instagram"
-                >
-                  <i className="fab fa-instagram" />
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="p-0">
-                <NavLink
-                  data-placement="bottom"
-                  href="https://www.youtube.com/channel/UCtclQznVL7kvtYvZfo6WGyw "
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Like us on Youtube"
-                >
-                  <i className="fab fa-youtube" />
-                  <p className="d-lg-none d-xl-none">Youtube</p>
                 </NavLink>
               </NavItem>
             </Nav>
